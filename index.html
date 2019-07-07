@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Virtual Magic 8 Ball | Ask Away!</title>
+  <meta name="description" content="Virtual Magic 8 Ball Project">
+  <meta name="author" content="Eli Almario">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/f62d360eff.js"></script>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="freeze-layer" id="freezeLayer"></div>
+  <div class="wrapper">
+    <header>
+      <h1 class="mobile-h1">Ask Away!</h1>
+      <h1 class="desktop-h1">Virtual magic 8 Ball!</h1>
+    </header>
+  
+    <main>
+      <div class="main-wrapper">
+        <div class="magicball-container">
+          <figure>
+            <img src="img/magic8ball.png" alt="Magic 8 Ball" id="magic8ball"/>
+          </figure>
+        </div>
+
+ 
+        <div class="question-input-area">
+          <label class="question-label" for="question-input">Ask Away</label>
+          <input id="question-input" type="text" name="question-input"/> 
+        </div>
+
+        <div class="button-container">
+          <button id="predict-button">Predict</button>
+        </div>
+
+        <div id="answer-window" class="popup-box">
+          <p id="answer-text">Answer Text Here</p>
+          <button id="okay-btn">OK</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
