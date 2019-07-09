@@ -29,7 +29,13 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="freeze-layer" id="freezeLayer"></div>
+  <div class="bg-modal">
+      <div id="answer-window" class="popup-box">
+        <p id="answer-text">Answer Text Here</p>
+        <button id="okay-btn">OK</button>
+      </div>
+  </div>
+  
   <div class="wrapper">
     <header>
       <h1 class="mobile-h1">Ask Away!</h1>
@@ -47,19 +53,20 @@
  
         <div class="question-input-area">
           <label class="question-label" for="question-input">Ask Away</label>
-          <input id="question-input" type="text" name="question-input"/> 
+          <input id="question-input" type="text" name="question-input" value=""/> 
         </div>
 
         <div class="button-container">
           <button id="predict-button">Predict</button>
         </div>
 
-        <div id="answer-window" class="popup-box">
-          <p id="answer-text">Answer Text Here</p>
-          <button id="okay-btn">OK</button>
-        </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-wrapper">
+        <p>&copy; Eli Almario 2019</p>
+      </div>
+    </footer>
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
