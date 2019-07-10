@@ -1,4 +1,4 @@
-var question = document.getElementById('question-input').value;
+var question = document.querySelector('input[name="question-input"]').value;
 var answerText = document.getElementById('answer-text');
 var predictBtn = document.getElementById('predict-button');
 var okayBtn = document.getElementById('okay-btn');
@@ -16,14 +16,16 @@ var magic8Ball = {};
         var answerMe = this.listOfAnswers[randomIndex];
 
         answerText.innerText = answerMe;
-    }
-    
+    } 
+
 predictBtn.addEventListener('click', function(){
     magic8Ball.askQuestion(question);
     document.querySelector('.bg-modal').style.display = 'flex';
 });
+
 okayBtn.addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none';
+    document.querySelector('input[name="question-input"]').value = "";
 })
 
 
