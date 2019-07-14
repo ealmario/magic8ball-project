@@ -17,16 +17,12 @@ var magic8Ball = {};
         var answerMe = this.listOfAnswers[randomIndex];
 
         answerText.innerText = answerMe;
-<<<<<<< HEAD
-    } 
-=======
-    }
->>>>>>> fixups
+ }
 
-predictBtn.addEventListener('click', function(){
-    magic8Ball.askQuestion(question);
+predictBtn.addEventListener('click', function (){
+    magic8Ball.askQuestion();
     document.querySelector('.bg-modal').style.display = 'flex';
-});
+});  
 
 okayBtn.addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none';
