@@ -235,11 +235,7 @@ textarea {
 
   .popup-box button{
     background: #FBFEF9;
-<<<<<<< HEAD
     border: 3px solid  #E5E7E3;
-=======
-    border: 3px solid #E5E7E3;
->>>>>>> fixups
     border-radius: 30px;
     cursor: pointer;
     font-size: 0.75rem;
