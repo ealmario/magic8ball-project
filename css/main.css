@@ -182,7 +182,7 @@ textarea {
 
   #predict-button{
     background: #FCD0A1;
-    border:none;
+    border: none;
     border-radius: 15px;
     color: #000;
     cursor: pointer;
@@ -235,7 +235,11 @@ textarea {
 
   .popup-box button{
     background: #FBFEF9;
+<<<<<<< HEAD
     border: 3px solid  #E5E7E3;
+=======
+    border: 3px solid #E5E7E3;
+>>>>>>> fixups
     border-radius: 30px;
     cursor: pointer;
     font-size: 0.75rem;
@@ -247,6 +251,7 @@ textarea {
 
   .popup-box button:active{
     background: #CED0CC;
+    border: 3px solid #CED0CC;
   }
 
   .popup-box button:hover{
