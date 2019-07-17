@@ -19,10 +19,19 @@ var magic8Ball = {};
         answerText.innerText = answerMe;
  }
 
-predictBtn.addEventListener('click', function (){
-    magic8Ball.askQuestion();
+ function displayWindow () {
     document.querySelector('.bg-modal').style.display = 'flex';
-});  
+ }
+
+ predictBtn.addEventListener('click', function () {
+    if (document.querySelector('input[name="question-input"]').value === "") {
+        alert("Don\'t be shy, ask a question");
+    }
+    else {
+        magic8Ball.askQuestion();
+        displayWindow();        
+    }
+ });
 
 okayBtn.addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none';
